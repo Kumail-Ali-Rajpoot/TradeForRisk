@@ -1,6 +1,10 @@
 # This is a trade data store website
 
 This project was created by using simple css and simple react hooks.
+## node_modules
+
+The node modules folder it does not available with code.<br/>
+It is important to create a node_module folder by using this command "npm i" OR "npm install"
 
 ## Available Scripts
 
