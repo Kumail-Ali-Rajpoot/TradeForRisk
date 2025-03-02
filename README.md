@@ -6,6 +6,12 @@ This project was created by using simple css and simple react hooks.
 The node modules folder it does not available with code.<br/>
 It is important to create a node_module folder by using this command "npm i" OR "npm install"
 
+## Web functionality
+
+The website is allowed if you find the any trade we search the trade serial number to find the specific trade.<br/>
+The default four trades serial number are (1:20251|2:20252|3:20253|4:20254).
+And more than website is allowed to pu your trade journey article.
+
 ## Available Scripts
 
 In the project directory, you can run:
