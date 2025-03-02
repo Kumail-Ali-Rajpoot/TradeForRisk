@@ -1,0 +1,222 @@
+
+.SearchOutput-container {
+    width: 100vw;
+    padding: 1vw;
+    background-color: #4234;
+}
+.backOutput-btn {
+    width: 7vmax;
+    font-size: 2vw;
+    border: 1px solid #9999;
+    border-radius: 0.5vw;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s;
+}
+.backOutput-btn:hover {
+    background-color: rgba(255, 255, 255);
+    color: black;
+}
+/* After this SearchOutputContent style is started */
+.SearchOutputContent-container {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+
+}
+.parent-outputInfo-container {
+    width: 95vw;
+    justify-content: space-around;
+    display: flex;
+}
+.OutputImage-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.trade-info-heading {
+    font-size: 1.5vw;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.OutputImage-container .outputImg {
+    width: 50vw;
+    position: relative;
+    margin-right: 4vw;
+    transition: all 2s;
+    object-fit: contain;
+    box-shadow: 1px 1px 10px aquamarine;
+    animation: shadow 2s ease-in-out infinite;
+}
+.date-day-container {
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: sans-serif;
+}
+.date-day-container .output-date-day {
+    width: max-content;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(23, 23, 27);
+    box-shadow: 1px 1px 10px aquamarine;
+    animation: shadow 2s infinite;
+}
+.outputInfo-container {
+    width: max-content;
+    height: max-content;
+    width: 20vw;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    transition: all 2s;
+    box-shadow: 1px 1px 10px aquamarine;
+    animation: shadow 2s infinite;
+    background-color: rgb(15, 14, 14);
+}
+.outputInfo-container:hover {
+    box-shadow: inset 1px 1px 15px aquamarine;
+}
+.percentage-line {
+    width: 20vw;
+    border-bottom-right-radius: 2vw;
+    border-top-right-radius: 2vw;
+    height: 0.7vw;
+    position: relative;
+    background-color: gray;
+}
+.show-percentage-line {
+    width: 10%;
+    height: 0.7vw;
+    font-size: 0.5vw;
+    text-align: right;
+}
+.currency-info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.currency-image {
+    width: 4vw;
+    height: 4vw;
+    object-fit: contain;
+    animation: shadow2 10s infinite;
+    border-radius: 50%;
+}
+.currency-name {
+    text-transform: uppercase;
+    width: max-content;
+    padding: 1vw;
+    background-color: #1238;
+}
+.c-green {
+    color: green;
+}
+.c-purple {
+    color: purple;
+}
+.c-red {
+    color: red;
+}
+.c-goldernod {
+    color: goldenrod;
+}
+@keyframes shadow {
+    0% {
+        box-shadow: 1px 1px 10px aquamarine;
+    }
+    25% {
+        box-shadow: 1px 1px 20px aqua;
+    }
+    50% {
+        box-shadow: 1px 1px 30px skyblue;
+    }
+    75% {
+        box-shadow: 1px 1px 20px aqua;
+    }
+    100% {
+        box-shadow: 1px 1px 10px aquamarine;
+    }
+}
+@keyframes shadow2 {
+    0% {
+        box-shadow: 1px 1px 10px gold;
+    }
+    25% {
+        box-shadow: 1px 1px 20px goldenrod;
+    }
+    50% {
+        box-shadow: 1px 1px 20px yellowgreen;
+    }
+    75% {
+        box-shadow: 1px 1px 20px goldenrod;
+    }
+    100% {
+        box-shadow: 1px 1px 10px gold;
+    }
+}
+/* This content is useful for this time */
+        /* .percentage-line::before {
+            width: 75%;
+            height: 0.7vw;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            content: "75%";
+            font-size: 10px;
+            border-bottom-right-radius: 2vw;
+            border-top-right-radius: 2vw;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            background: green;
+            transition: 2s;
+        } */
+        /* .percentage-label-of-trade {
+            width: 90vw;
+            font-size: 3vw;
+            font-family: sans-serif;
+            text-align: center;
+            color: rgba(0, 100, 0,0.7);
+            background-color: rgba(50, 205, 50,0.6);
+            font-weight: 900;
+        }
+        .over-all-percentage-container {
+            width: 95.5vw;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .over-all-percentage {
+            width: 90vw;
+            height: 4vw;
+            background-color: gray;
+            border-radius: 2vw;
+        }
+        .over-all-percentage::before {
+            content: "67%";
+            text-align: end;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            font-size: 2vw;
+            font-weight: 700;
+            width: 67vw;
+            border-radius: 2vw;
+            height: 4vw;
+            position: absolute;
+            background-color: green;
+        } */

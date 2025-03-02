@@ -1,0 +1,72 @@
+.SearchComponent-container {
+    width: 25vw;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 2vw;
+
+}
+.SearchComponent-container .searchBtn {
+    width: 5vw;
+    height: 2.4vw;
+    position: relative;
+    top: 2.8vw;
+    /* padding: 0vw; */
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid white;
+    border-radius: 0.5vw;
+    color: aquamarine;
+    background-color: transparent;
+}
+.SearchComponent-container .searchBtn:hover {
+    color: white;
+    background-color: rgba(127, 255, 212,0.3);
+}
+.SearchComponent-container .searchBtn:active {
+    color: white;
+    background-color: rgba(0, 255, 255,0.6);
+}
+.SearchComponent-container p{
+    font-size: 0.9vw;
+    color: aquamarine;
+    position: relative;
+    top: 0.5vw;
+}
+.SearchComponent-container input {
+    width:10vw;
+    border: 1px solid white;
+    border-radius: 0.3vw;
+    padding: 0.5vw;
+    color: aquamarine;
+    transition: all 1s;
+    background-color: transparent;
+    cursor:text;
+}
+.SearchComponent-container input:hover {
+    width: 13vw;
+    border: 1px solid aquamarine;
+    border-radius: 0.3vw;
+    padding: 0.5vw;
+    color: aquamarine;
+    background-color: transparent;
+    cursor:text;
+}
+
+.SearchComponent-container input::placeholder {
+    color: gray;
+    transition: all 1s;
+}
+.SearchComponent-container input:focus::placeholder {
+    width: 15vw;
+    color: aquamarine;
+}
+.SearchComponent-container input:focus {
+        width: 15vw;
+        border: 1px solid aquamarine;
+        border-radius: 0.3vw;
+        padding: 0.5vw;
+        color: aquamarine;
+        background-color: transparent;
+        cursor:text;
+}

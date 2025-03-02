@@ -1,0 +1,40 @@
+.homeSlide {
+    width: 75vw;
+    padding: 5vw;
+    color: white;
+    border-radius: 2vw;
+    position:relative;
+    top: 2vw;
+    box-shadow: inset 1px 1px 100px #282c54;
+    background-color: rgba(14, 16, 19, 0.99);
+}.image-container{
+    width: 70vw;
+    padding: 3vw;
+    gap: 1vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}.image-container .top-trades-images {
+    width: 20vw;
+    height: 12vw;
+    gap: 10px;
+    background-color: red;
+}
+#title,#content {
+    color: #fff;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#title {
+    font-size: 3vw;
+    font-weight: bolder;
+}
+.home-heading {
+    font-size: 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 4vw;
+    font: 700;
+}

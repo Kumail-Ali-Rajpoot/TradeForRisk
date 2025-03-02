@@ -1,0 +1,79 @@
+#navbar {
+    height: 4vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    box-shadow: inset 1px 1px 100px #282c32;
+}
+.searchOutput-container {
+    width: 100vw;
+    position: relative;
+    top: 0px;
+}
+.result-msg-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 500;
+    background-color: rgba(40, 44, 50,0.8);
+    text-transform: capitalize;
+    color: white;
+}
+.TradeForRisk-container {
+    display: flex;
+    flex-direction: column;
+}
+.show {
+    display: inline-block;
+}
+.none {
+    display: none;
+}
+.link-container {
+    width: 50vw;
+    display: flex;
+    padding: 4px;
+    transition: all 2s;
+    justify-content: space-around;
+}
+.active {
+    color: aqua;
+    border-bottom: 2px solid aqua;
+}
+.link-container .links:hover {
+    color: aqua;
+    cursor: pointer;
+    border-bottom: 2px solid aqua;
+}
+.link-container .links {
+    transition: all 0.5s ease-in-out;
+}
+.link-container .links {
+    padding: 1vw;
+}
+.logo-image {
+    width:5vw;
+    height: 2.5vw;
+    background-image: url(images/Trade-For-Risk-2.png);
+    background-size: cover;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#open{
+    border-bottom: none;
+}
+#close {
+    border-bottom: 2px solid orangered;
+}
+.TradeForRisk-footer {
+    width: 100vw;
+    height: 10vw;
+}

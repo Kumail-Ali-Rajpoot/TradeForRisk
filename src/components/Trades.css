@@ -1,0 +1,64 @@
+.Trades-container {
+    width: 74vw;
+    padding: 1vw;
+    background-color: rgba(40, 44, 50,0.9);
+    border-radius: 2vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: shadow 5s ease infinite;
+}
+@keyframes shadow {
+    0% {
+        box-shadow: inset 1px 1px 20px aqua;
+        border: 1px solid aqua;
+    }
+    25%{
+        box-shadow: inset 1px 1px 10px blue;
+        border: 1px solid blue;
+    }
+    50% {
+        box-shadow: inset 1px 1px 40px aquamarine;
+    border: 1px solid aquamarine;
+    }
+    75% {
+        box-shadow: inset 1px 1px 10px blue;
+        border: 1px solid blue;
+    }
+    100% {
+        box-shadow: inset 1px 1px 20px aqua;
+        border: 1px solid aqua;
+    }
+}
+/* TradesContent.js code was started */
+.pair-name {
+    text-transform: uppercase;
+}
+.TradesContent-container {
+    width: 65vw;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    background-color: rgba(245, 245, 245,0.1);
+}
+.Trades-container .trades-image {
+    width: 60vw;
+}
+.date-and-day-container {
+    width: 70vw;
+    color: white;
+    position: relative;
+    text-decoration-line: underline;
+    display: flex;
+    justify-content: space-around;
+}
+.symbol-img {
+    width: 4vw;
+    height: 4vw;
+    object-fit: contain;
+    border-radius: 50%;
+}
