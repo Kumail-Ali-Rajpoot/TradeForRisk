@@ -9,8 +9,8 @@ It is important to create a node_module folder by using this command "npm i" OR 
 ## Web functionality
 
 The website is allowed if you find the any trade we search the trade serial number to find the specific trade.<br/>
-The default four trades serial number are (1:20251|2:20252|3:20253|4:20254).
-And more than website is allowed to pu your trade journey article.
+The default four trades serial number are (1:20251|2:20252|3:20253|4:20254).<br/>
+And more than website is allowed to push your trade journey article.
 
 ## Available Scripts
 
