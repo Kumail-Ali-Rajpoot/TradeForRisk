@@ -55,3 +55,12 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 The more detail of the website is add with comments. How to store the data trade this process is explained diffrent files in comments with code.
 
+### More Add functionality 
+
+The work on this website is start to improve the website just like at this time if we put the data in website
+we store data in the form of string by manually add.
+<br>
+This problem is solved as soon as possible by adding a data base and using the node with mongoose and create more better this website.
+<br>
+When we update the website we add a options for user to add a data of your trade in easy way.Because we add the
+a option to add a trade and add a your article which is based on your trading journey.
