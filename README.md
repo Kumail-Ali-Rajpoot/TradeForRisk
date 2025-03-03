@@ -9,6 +9,20 @@ It is important to create a node_module folder by using this command "npm i" OR 
 
     777888666
 
+## Learn More
+
+The more detail of the website is add with comments. How to store the data trade this process is explained diffrent files in comments with code.
+
+### More Add functionality 
+
+The work on this website is start to improve the website just like at this time if we put the data in website
+we store data in the form of string by manually add.
+<br>
+This problem is solved as soon as possible by adding a data base and using the node with mongoose and create more better this website.
+<br>
+When we update the website we add a options for user to add a data of your trade in easy way.Because we add the
+a option to add a trade and add a your article which is based on your trading journey.
+
 ## Web functionality
 
 The website is allowed if you find the any trade we search the trade serial number to find the specific trade.<br/>
@@ -50,17 +64,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-The more detail of the website is add with comments. How to store the data trade this process is explained diffrent files in comments with code.
-
-### More Add functionality 
-
-The work on this website is start to improve the website just like at this time if we put the data in website
-we store data in the form of string by manually add.
-<br>
-This problem is solved as soon as possible by adding a data base and using the node with mongoose and create more better this website.
-<br>
-When we update the website we add a options for user to add a data of your trade in easy way.Because we add the
-a option to add a trade and add a your article which is based on your trading journey.
