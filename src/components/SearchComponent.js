@@ -20,11 +20,8 @@ const SearchComponent = ({searchClick,searchExpression}) => {
   }
   return (
     <div className='SearchComponent-container'>
-      <div className='Search-container'>
-        <p >Enter A Trade Date Or Serial Number</p>
-        <input type="text" onChange={handleChange} placeholder='Search trade' />
-      </div>
-      <button className="searchBtn" onClick={handleClick}>Search</button>
+        <input id="input" type="text" onChange={handleChange} placeholder='Search trade by enter serial number' />
+        <button id="search-btn" className="searchBtn" onClick={handleClick}>Search</button>
     </div>
   )
 }

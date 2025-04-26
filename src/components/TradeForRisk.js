@@ -37,7 +37,10 @@ function TradeForRisk() {
     console.log(searchFound)
     setSearchOutput(searchOutput?false:true);
   }
-
+  const [menu,setMenu] = useState(false);
+  function handleMenu () {
+    setMenu(!menu);
+  }
   function handleClick (input) {
     setInputData(input);
     setSearchOutput(searchOutput?false:true);
@@ -48,7 +51,7 @@ function TradeForRisk() {
   document.body.overFlow = "hidden";
   return (
     <>
-        <video autoPlay loop muted src={videoDB} style={{position:"fixed"}}></video>
+        <video autoPlay loop muted src={videoDB} style={{position:"fixed",width: "100%",height:"100%",objectFit:"cover"}}></video>
       <div className={searchOutput?"searchOutput-container":"none"}>
       {searchFound?
         <SearchOutput outputData={inputData} handleClick={handleClick}/>
@@ -65,8 +68,10 @@ function TradeForRisk() {
           <div className="logo-container">
             <h1>TrdeForRisk</h1> <div className="logo-image"></div>
           </div>
-
-          <div className="link-container">
+          {/* ---------------------------------------------------------------------------------------- */}
+          {/* This part will be executed when user open the website on desktop or big screen */}
+          {/* ---------------------------------------------------------------------------------------- */}
+          <div className="desktop-link-container" style={{display:"flex"}}>
             <p className={`links ${Home?"active":""}`}
               onClick={() => {
                 setHome((Home = true));
@@ -100,11 +105,69 @@ function TradeForRisk() {
               }}
               id={`TradesDB`}> TradesDB</p>
           </div>
+          {/* --------------------------------------------------------------------------------- */}
+          {/* Desktop part is ended */}
+          {/* --------------------------------------------------------------------------------- */}
+{/* --------------------------------------------------------------------------------------------------------- */}
+          {/* --------------------------------------------------------------------------------- */}
+          {/* This part is excuted when website is open on mobile */}
+          {/* --------------------------------------------------------------------------------- */}
+          {
+            menu?
+            <div className="link-container" style={{display:"flex"}}>
+            <p className={`links ${Home?"active":""}`}
+              onClick={() => {
+                handleMenu();
+                setHome((Home = true));
+                setAbout((About = false));
+                setTrades((Trades = false));
+                setTradesDB((TradesDB = false));
+              }}id="Home">Home</p>
+            <p className={`links ${About?"active":""}`}
+              onClick={() => {
+                handleMenu();
+                setHome((Home = false));
+                setAbout((About = true));
+                setTrades((Trades = false));
+                setTradesDB((TradesDB = false));
+              }}
+              id="About">About</p>
+            <p className={`links ${Trades?"active":""}`}
+              onClick={() => {
+                handleMenu();
+                setHome((Home = false));
+                setAbout((About = false));
+                setTrades((Trades = true));
+                setTradesDB((TradesDB = false));
+              }}
+              id="Trades">
+              Trades</p>
+            <p className={`links ${TradesDB?"active":""}`}
+              onClick={() => {
+                handleMenu();
+                setHome((Home = false));
+                setAbout((About = false));
+                setTrades((Trades = false));
+                setTradesDB((TradesDB = true));
+              }}
+              id={`TradesDB`}> TradesDB</p>
+          </div>
+            :<div id="menu" onClick={handleMenu}>
+          menu</div>}
+          {/* -------------------------------------------------------------------------------------- */}
+          {/* Mobile part is end */}
+          {/* -------------------------------------------------------------------------------------- */}
           <div className="search-component">
             <Search searchClick={handleClick} searchExpression={problemHandle} />
           </div>
         </nav>
+        <nav className="search-navbar">
+          <div className="android-search-component">
+            <Search searchClick={handleClick} searchExpression={problemHandle} />
+          </div>
+        </nav>
       </div>
+      <div className="main-content-container">
       <main id="main-content">
         {Home ? <HomeLink /> : ""}
         {About ? <AboutLink /> : ""}
@@ -112,9 +175,13 @@ function TradeForRisk() {
         {TradesDB ? <TradeDBLink /> : ""}
       </main>
       </div>
+      {/* ------------------------------------------------------------------------------------------ */}
+      {/* This part is of footer of the website */}
+      {/* ------------------------------------------------------------------------------------------ */}
       <footer>
           <Footer/>
       </footer>
+      </div>
     </>
   );
 }

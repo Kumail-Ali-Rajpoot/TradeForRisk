@@ -8,6 +8,7 @@ export default function LandingPage() {
   let [limit,setLimit] = useState(2);
   const [inputValue,setInputValue] = useState();
   const msg = document.getElementById("msg");
+  const placeholder = document.getElementById("placeholder-1");
   let Navigate = useNavigate();
   function goToNextPage () {
     // alert("passwrod is correct");
@@ -20,16 +21,20 @@ export default function LandingPage() {
   function handleClick() {
     if(inputValue === "777888666") {
       msg.innerText = "verifying...";
+      msg.style.boxShadow = "inset 0.5px 10px 30px green"
       setTimeout(()=>{
         goToNextPage();
         msg.innerText = "verified";
         msg.style.color = "green";
+        placeholder.value = "";
+      msg.style.boxShadow = "inset 0.5px 10px 30px darkGreen"
       },2000)
     }else if (limit === 0) {
       submitBtn.disabled = true;
       let secondInterval = setInterval(()=>{
         setLimitTime(limitTime--);
         msg.innerText = `key locked for ${limitTime}s`;
+        msg.style.boxShadow = "inset 0.5px 10px 30px darkRed"
         console.log(limitTime)
       },1000)
       setTimeout(()=>{
@@ -37,18 +42,22 @@ export default function LandingPage() {
       msg.innerText = `retry`;
       setLimitTime(limitTime--)
       clearInterval(secondInterval)
+      placeholder.value = "";
       },60000)
     }
-    else {
+    else if(inputValue !== "777888666"){
       msg.innerText = "verifying...";
       msg.style.color = "white";
-      setLimit(limit--);
+      msg.style.boxShadow = "inset 0.5px 10px 30px green"
+      setLimit(limit-1);
       console.log(limit)
       submitBtn.disabled = true;
       setTimeout(()=>{
         submitBtn.disabled = false;
         msg.innerText = "invalid";
+        placeholder.value = "";
         msg.style.color = "red";
+        msg.style.boxShadow = "inset 0.5px 10px 30px orange"
       },2000)
     }
   }
@@ -56,7 +65,7 @@ export default function LandingPage() {
     <div className="App">
     <div class="container">
     <div class="child">
-        <label for="">Enter a key</label>
+        <label for="">Enter the key</label>
         <input type="password" placeholder="Enter key" onChange={handleChange} name="key" id="placeholder-1"></input>
         <p id="msg">Require</p>
         <div>
@@ -64,8 +73,10 @@ export default function LandingPage() {
         </div>
     </div>
     <div class="animation-box"></div>
-    <div id="yellow-line"></div>
+    <div id="yellow-line">
     <p id="description">Purposes of website to make is my personal trading stretgy which is 95% accurate.</p>
+
+    </div>
 </div>
 </div>
 )

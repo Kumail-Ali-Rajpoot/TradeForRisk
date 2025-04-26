@@ -1,11 +1,22 @@
 #navbar {
-    height: 4vw;
+    height: 4vmax;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100vw;
     color: white;
     box-shadow: inset 1px 1px 100px #282c32;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#main-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .searchOutput-container {
     width: 100vw;
@@ -41,6 +52,62 @@
     transition: all 2s;
     justify-content: space-around;
 }
+#menu {
+    display: none;
+}
+.android-search-component {
+    display: none;
+}
+@media (max-width: 1100px) {
+    #menu {
+        display: flex;
+        padding: 0.5vmax;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border-radius: 0.2vmax;
+        color: white;
+        background-color: transparent;
+        text-transform: capitalize;
+        border: 1px solid aqua;
+    }
+    .android-search-component {
+        display: flex;
+    }
+    .search-navbar {
+        width: 100%;
+        height: fit-content;
+        padding: 1.5vmax 0vmax;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        color: white;
+        box-shadow: inset 1px 1px 100px #282c32;
+    }
+    .search-component {
+        display: none;
+    }
+    .desktop-link-container {
+        position: absolute;
+        top: -100rem;
+    }
+    .link-container {
+    width: 10vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #282c32;
+    z-index: 1;
+    font-size: 2vmax;
+    text-align: center;
+    }
+}
+
 .active {
     color: aqua;
     border-bottom: 2px solid aqua;
@@ -76,4 +143,25 @@
 .TradeForRisk-footer {
     width: 100vw;
     height: 10vw;
+}
+
+/* Desktop link container */
+
+.desktop-link-container {
+    width: 50vw;
+    display: flex;
+    padding: 4px;
+    transition: all 2s;
+    justify-content: space-around;
+}
+.desktop-link-container .links:hover {
+    color: aqua;
+    cursor: pointer;
+    border-bottom: 2px solid aqua;
+}
+.desktop-link-container .links {
+    transition: all 0.5s ease-in-out;
+}
+.desktop-link-container .links {
+    padding: 1vw;
 }

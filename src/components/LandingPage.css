@@ -31,7 +31,7 @@
     align-items: center;
   }
   label {
-    font-size: 6vw;
+    font-size: 6vmax;
     color: #fff;
     cursor: default;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -47,9 +47,10 @@
     align-items: center;
     flex-direction: column;
   }#placeholder-1 {
-    width: 50vw;
-    padding: 1vw;
-    font-size: 1vw;
+    width: 90vw;
+    min-width: 200px;
+    padding: 1.5vmax;
+    font-size: 1.5vmax;
     color: white;
     cursor: pointer;
     background-color: transparent;
@@ -75,10 +76,11 @@
   }
   #submit-1 {
     transition: all 2s;
-    width: 70vmin;
-    font-size: 2vw;
-    padding: 1vw;
-    border-radius: 1vw;
+    width: 70vw;
+    min-width: 230px;
+    font-size: 2vmax;
+    padding: 1vmax;
+    border-radius: 1vmax;
     color: #ffffff;
     cursor: pointer;
     box-shadow: inset 2px 2px 200px blue;
@@ -98,11 +100,12 @@
   }
   #description {
     width: 100vw;
-    height: 2.5vw;
+    height: 2.5vmax;
     color: white;
-    font-size: 2vw;
-    position: absolute;
-    bottom: 2vw;
+    font-size: 2vmax;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
     animation: description 50s infinite;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -115,6 +118,8 @@
   }
   #yellow-line {
     width: 100vw;
+    display: flex;
+    align-items: center;
     height: 5.9vw;
     padding: 0.19vw;
     position: absolute;
@@ -122,11 +127,14 @@
     box-shadow: inset 2px 2px 40px yellow;
   }
   #msg {
-    font-size: 2vw;
+    font-size: 2vmax;
     cursor: default;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fff;
+    color: white;
+    box-shadow: inset 0.5px 10px 30px blue;
+    padding: 0.5vmax;
+    border-radius: 0.2vmax;
     position: relative;
-    bottom: 3vw;
+    bottom: 1vmax;
   }
   

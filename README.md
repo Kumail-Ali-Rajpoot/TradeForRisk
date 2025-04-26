@@ -29,6 +29,17 @@ The website is allowed if you find the any trade we search the trade serial numb
 The default serial numbers for trades are (1:20251|2:20252|3:20253|4:20254).<br/>
 And more than website is allowed to push your trade journey article.
 
+# Information About Code How Write The Code
+
+The pages of the website are based on components and routers are added but not used seem some problems. <br/>
+The system of navigation is between the components which is created by write simple javascript logic. <br/>
+Thus, if we want to add a one more navigation option we need to understand the first navigation logic which will better for you.<br/>
+More than the we create a database by manually in this website by creating the components and no use of mongoDB,NODEJS,and expressJS. <br/>
+I hope you understand.<br/>
+<hr/>
+<!-- We write the more information about this website -->
+
+
 ## Available Scripts
 
 In the project directory, you can run:
